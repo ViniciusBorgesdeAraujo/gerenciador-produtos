@@ -5,13 +5,18 @@
 </div>
 
 @for(product of products(); track product.id){
+
+<div class="item-container">
   @defer (on immediate) {
-    <app-card [product]="product" (edit)="onEdit(product)" (delete)="onDelete(product)"></app-card>
+  <app-card
+    [product]="product"
+    (edit)="onEdit(product)"
+    (delete)="onDelete(product)"
+  ></app-card>
   }
-
-}
-
-@empty {
+</div>
+} 
+@empty { 
   @defer () {}
-  <app-no-items></app-no-items>
+      <app-no-items></app-no-items>
 }

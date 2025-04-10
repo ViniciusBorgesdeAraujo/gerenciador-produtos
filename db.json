@@ -1,3 +1,12 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "2e5a",
+      "title": "Sapato "
+    },
+    {
+      "id": "7388",
+      "title": "Mochila"
+    }
+  ]
 }
