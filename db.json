@@ -1,20 +1,3 @@
 {
-  "products": [
-    {
-      "id": "283b",
-      "title": "Sapato"
-    },
-    {
-      "title": "Cinto Novo",
-      "id": "be4d"
-    },
-    {
-      "id": "8816",
-      "title": "Chinelo"
-    },
-    {
-      "title": "Cinto de Couro",
-      "id": "3e5a"
-    }
-  ]
+  "products": []
 }
