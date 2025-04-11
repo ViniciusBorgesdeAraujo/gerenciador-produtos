@@ -1,27 +1,88 @@
-# ProductStrore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.15.
 
-## Development server
+# Gerenciador de Produtos - Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto foi desenvolvido como parte introdutória do curso de Angular, com o objetivo de explorar as principais ferramentas do framework e aplicar os conceitos de CRUD (Create, Read, Update, Delete) em uma aplicação real.
 
-## Code scaffolding
+## 📂 Estrutura do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A organização dos arquivos segue boas práticas, separando componentes por funcionalidade e reutilização:
 
-## Build
+```
+src/
+└── app/
+    ├── features/
+    │   ├── create/
+    │   ├── list/
+    │   │   └── components/
+    │   │       ├── card/
+    │   │       └── no-items/
+    │   └── edit/
+    ├── shared/
+    │   ├── components/
+    │   │   ├── back-to-list/
+    │   │   ├── form/
+    │   │   └── header/
+    │   ├── interfaces/
+    │   ├── resolvers/
+    │   └── services/
+    ├── app.component.ts
+    ├── app.component.html
+    ├── app.component.css
+    ├── app.routes.ts
+    └── app.config.ts
+```
+## Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Listagem de produtos
+- Criação de novo produto
+- Edição de produto existente
+- Exclusão de produtos
+- Reutilização de componentes compartilhados
 
-## Running unit tests
+## Backend Simulado
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para simular um backend RESTful, foi utilizado o **JSON Server** com um arquivo `db.json`, contendo os dados dos produtos.
 
-## Running end-to-end tests
+### Como rodar o JSON Server:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npx json-server --watch db.json
+```
 
-## Further help
+## Como rodar o projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone o repositório:
+```bash
+git clone https://github.com/ViniciusBorgesdeAraujo/gerenciador-produtos.git
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento Angular:
+```bash
+ng serve
+```
+
+4. Em outro terminal, inicie o JSON Server:
+```bash
+npx json-server --watch db.json
+```
+
+5. Acesse a aplicação em:  
+`http://localhost:4200`
+
+## Tecnologias utilizadas
+
+- Angular
+- TypeScript
+- HTML/CSS
+- JSON Server
+
+---
+
+Projeto de aprendizado criado com fins educacionais.
+
